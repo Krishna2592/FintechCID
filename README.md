@@ -7,7 +7,6 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)
 ![MLflow](https://img.shields.io/badge/MLflow-2.21-0194E2?logo=mlflow&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.44-FF4B4B?logo=streamlit&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-llama3.1-8B-black)
 ![Triton](https://img.shields.io/badge/Triton-Inference_Server-76B900?logo=nvidia&logoColor=white)
 ![CI](https://img.shields.io/github/actions/workflow/status/Krishna2592/FintechCID/devsecops.yml?label=CI%2FCD&logo=github-actions)
 
