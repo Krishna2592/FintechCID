@@ -482,4 +482,4 @@ No transaction is rejected purely by algorithm. Every `REJECTED BY AUDITOR` outc
 
 ## License
 
-MIT — see `LICENSE` for details.
+Apache — see `LICENSE` for details.
