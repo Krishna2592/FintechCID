@@ -8,13 +8,12 @@
 ![MLflow](https://img.shields.io/badge/MLflow-2.21-0194E2?logo=mlflow&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.44-FF4B4B?logo=streamlit&logoColor=white)
 ![Triton](https://img.shields.io/badge/Triton-Inference_Server-76B900?logo=nvidia&logoColor=white)
-![CI](https://img.shields.io/github/actions/workflow/status/Krishna2592/FintechCID/devsecops.yml?label=CI%2FCD&logo=github-actions)
 
 ---
 
 ## What This Is
 
-FintechCID is a **multi-agent financial crime investigation pipeline** designed around the operational reality of AML/CFT compliance at an institution like EY. A transaction doesn't get a binary fraud/not-fraud verdict from a single model — it goes through a chain of independent agents, with a human auditor making the final call on high-risk cases.
+FintechCID is a **multi-agent financial crime investigation pipeline** designed around the operational reality of compliance. A transaction doesn't get a binary fraud/not-fraud verdict from a single model — it goes through a chain of independent agents, with a human auditor making the final call on high-risk cases.
 
 Three agents collaborate in sequence, orchestrated by LangGraph:
 
