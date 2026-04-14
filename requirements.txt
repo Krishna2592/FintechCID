@@ -1,0 +1,40 @@
+# Core Agent Framework
+langgraph==0.2.70
+langchain==0.3.25
+langchain-community==0.3.23
+
+# API Layer
+fastapi==0.115.12
+uvicorn==0.34.0
+pydantic==2.11.1
+
+# MLOps & Data Science
+mlflow==2.21.3
+scikit-learn==1.6.1
+pandas==2.2.3
+numpy==2.2.4
+
+# Big Data / Data Lake Engine
+pyspark==3.4.4
+
+# Frontend Dashboard
+streamlit==1.44.0
+
+# Document Generation & Forensics
+fpdf2==2.8.7
+langchain-ollama==1.0.1
+pypdf==6.9.2
+python-multipart==0.0.22
+
+# DevSecOps
+bandit==1.9.4
+pip-audit==2.10.0
+
+# Triton Inference Server -- ONNX export + client
+skl2onnx==1.17.0
+onnxruntime==1.20.1
+tritonclient[http]==2.52.0
+
+# Vectorless RAG -- PageIndex (VectifyAI)
+git+https://github.com/VectifyAI/PageIndex.git
+litellm==1.83.0

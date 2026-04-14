@@ -1,0 +1,2 @@
+# model.onnx is generated here by triton_serving/export_to_onnx.py
+# Run that script before starting the Triton container.

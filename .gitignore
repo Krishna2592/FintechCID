@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# MLflow experiment runs (large; regenerate with mlops/train_model.py)
+mlruns/
+
+# Training data (large binary; regenerate with data/generate_transactions.py)
+data/raw/
+
+# Generated document samples (regenerate with data/generate_documents.py)
+data/sample_docs/
+
+# Generated DevSecOps reports (regenerate with run_security_audit.sh)
+frontend/data/bandit_report.json
+frontend/data/dependency_report.json
+frontend/data/trivy_report.json
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Docker
+*.tar
+
+# Obsidian vault files
+.obsidian/
+
+# Generated Triton model binary (reproduced by triton_serving/export_to_onnx.py)
+triton_serving/model_repository/**/model.onnx
+
+# PageIndex workspace (LLM-generated document trees -- regenerated on upload)
+data/sample_docs/pageindex_workspace/

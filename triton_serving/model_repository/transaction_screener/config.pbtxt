@@ -1,0 +1,43 @@
+# Triton Inference Server -- Model Configuration
+# -----------------------------------------------
+# Model: transaction_screener
+# Backend: ONNX Runtime (CPU)
+# Source: exported from MLflow RF via skl2onnx (export_to_onnx.py)
+#
+# max_batch_size 0 means batching is handled by the client.
+# The batch dimension is explicit in dims (first axis, -1 = dynamic).
+# Two CPU model instances run in parallel for concurrent requests.
+
+name: "transaction_screener"
+backend: "onnxruntime"
+max_batch_size: 0
+
+input [
+  {
+    name: "float_input"
+    data_type: TYPE_FP32
+    dims: [ -1, 7 ]
+  }
+]
+
+output [
+  {
+    name: "label"
+    data_type: TYPE_INT64
+    dims: [ -1 ]
+  }
+  {
+    name: "probabilities"
+    data_type: TYPE_FP32
+    dims: [ -1, 2 ]
+  }
+]
+
+# Two parallel model instances -- Triton routes concurrent requests
+# across both without Python GIL contention
+instance_group [
+  {
+    count: 2
+    kind: KIND_CPU
+  }
+]
